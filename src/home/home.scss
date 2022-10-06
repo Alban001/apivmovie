@@ -1,0 +1,24 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: #ff531a;
+    flex-direction: column;
+    height:auto;
+    width: 100%;
+    padding-bottom: 3.5rem;
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        img{
+            border-radius: 0.3rem;
+        }
+       img:hover{
+         box-shadow: 0 0 3px rgb(255, 255, 255),0 0 6px rgb(255, 255, 255),
+        0 0 8px rgb(255, 255, 255);
+       }
+    }
+}
