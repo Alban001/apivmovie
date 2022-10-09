@@ -22,7 +22,7 @@
        }
     }
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 394px){
     .home{
         display: flex;
         justify-content: center;
@@ -32,12 +32,11 @@
         flex-direction: column;
         height:auto;
         width: 100%;
-        padding-bottom: 3.5rem;
+        
         &__container{
             display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            display: block;
+            grid-template-columns: 1fr 1fr;
+            
             img{
                 border-radius: 0.3rem;
             }
