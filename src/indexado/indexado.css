@@ -51,4 +51,59 @@
 }
 .indexado__botones button:hover {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 394px) {
+  .indexado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+  }
+  .indexado__paginacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+  }
+  .indexado__paginacion p {
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 1px 1px white;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    display: inline;
+  }
+  .indexado__paginacion p:hover {
+    background-color: white;
+    color: black;
+  }
+  .indexado__paginacion #active {
+    background-color: white;
+    color: black;
+  }
+  .indexado__botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 15%;
+    gap: 6rem;
+  }
+  .indexado__botones button {
+    background-color: rgb(89, 179, 77);
+    font-size: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .indexado__botones button:hover {
+    opacity: 0.5;
+  }
 }/*# sourceMappingURL=indexado.css.map */
