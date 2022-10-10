@@ -13,6 +13,7 @@
   padding-left: 1rem;
   background-color: black;
   color: white;
+  width: 97%;
 }
 .header nav a {
   padding: 0.5rem;
@@ -26,12 +27,13 @@
 @media only screen and (max-width: 394px) {
   .header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     height: 43%;
+    justify-content: center;
   }
   .header__img {
-    width: 100%;
+    width: 100vw;
     height: 100%;
   }
   .header nav {
@@ -41,7 +43,7 @@
     background-color: rgb(7, 7, 7);
     color: rgb(255, 255, 255);
     flex-direction: column;
-    width: 100%;
+    width: 97.5%;
     height: 100%;
   }
   .header nav a {
