@@ -1,4 +1,4 @@
-.moviecard {
+.popucard {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,28 +6,25 @@
   width: 13rem;
   height: auto;
 }
-.moviecard h3 {
-  color: #ff531a;
-}
-.moviecard__img {
-  height: 300px;
-  width: 200px;
+.popucard__img {
+  height: 350px;
+  width: 240px;
 }
 
 @media only screen and (max-width: 394px) {
-  .moviecard {
+  .popucard {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    width: 200px;
+    width: 120px;
     height: 250px;
   }
-  .moviecard h3 {
+  .popucard h3 {
     color: #ff531a;
   }
-  .moviecard__img {
-    height: 200px;
-    width: 150px;
+  .popucard__img {
+    height: 210px;
+    width: 110px;
   }
-}/*# sourceMappingURL=moviecard.css.map */
+}/*# sourceMappingURL=popucard.css.map */

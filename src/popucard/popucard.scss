@@ -1,27 +1,25 @@
-.moviecard{
+.popucard{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 13rem;
     height: auto;
-    h3{
-        color:#ff531a;
-    }
+    
     &__img{
-        height: 300px;
-        width: 200px;
+        height: 350px;
+        width: 240px;
         
     }
 }
 
 @media only screen and (max-width : 394px) {
-    .moviecard{
+    .popucard{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content:space-between;
         flex-direction: column;
-        width: 200px;
+        width: 120px;
         height: 250px;
         
         
@@ -29,8 +27,8 @@
             color:#ff531a;
         }
         &__img{
-            height: 200px;
-            width: 150px;
+            height: 210px;
+            width: 110px;
            
         }
     }
