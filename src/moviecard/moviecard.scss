@@ -21,16 +21,20 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 200px;
+        width: 130px;
         height: 250px;
-        
-        
+        margin: 0%;
+        padding: 0%;
         h3{
             color:#ff531a;
+            
+            font-size:0.5rem;
         }
         &__img{
             height: 200px;
             width: 150px;
+            margin: 0%;
+            padding: 0%;
            
         }
     }
