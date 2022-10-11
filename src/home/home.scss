@@ -14,8 +14,9 @@
          justify-content: baseline;
          align-items: center;
          border: 2px solid #ff531a;
-         height: 95%;
+         height: 100%;
          margin: 0.5rem;
+        
          flex-direction: column;
          background-color: rgb(0, 0, 0);
          header{
@@ -27,23 +28,21 @@
     &__right{
        margin: 0px;
        display: flex;
-       justify-content: center;
+       justify-content:baseline;
        flex-direction: column;
+       margin-top: 5rem;
+       margin-left: 2rem;
        h1{
          text-align: center;
          margin-left: 2rem;
-         
        }
-       
     }
-   
+
     &__container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 1px;
         margin: 1px;
-        
-        
     img{
         border-radius: 0.3rem;
     }
@@ -92,6 +91,7 @@
           flex-direction: column;
           width: 100%;
           margin-top: 1rem;
+          margin-right: 1.8rem;
           h1{
             text-align: left;
           }

@@ -56,7 +56,7 @@ console.log('home zone is ' +typeof(pagina))
        <aside  className='home__left'>
           <header><h1>+ Populares</h1></header>
         {popular.map((item, index) => {
-        if (index < 7) {
+        if (index < 9) {
           return <PopuCard key={item.id} poster_path={item.poster_path}/>
         }
         return null;
