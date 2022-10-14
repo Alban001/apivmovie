@@ -1,0 +1,56 @@
+.populares {
+  margin: 0px;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.populares h1 {
+  text-align: center;
+  margin-right: 7rem;
+  padding-bottom: 2rem;
+  font-size: 1.9rem;
+  text-align: center;
+}
+.populares__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1px;
+  margin: 1px;
+}
+.populares__container img {
+  border-radius: 0.3rem;
+}
+.populares__container img:hover {
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 6px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 394px) {
+  .populares {
+    margin: 0px;
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .populares h1 {
+    text-align: center;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .populares__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1px;
+    margin: 1px;
+  }
+  .populares__container img {
+    border-radius: 0.3rem;
+  }
+  .populares__container img:hover {
+    box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 6px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=populares.css.map */

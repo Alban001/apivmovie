@@ -5,7 +5,9 @@
     flex-direction: column;
     width: 13rem;
     height: auto;
-    
+    h3{
+        font-size: 1.2rem;
+    }
     &__img{
         height: 350px;
         width: 240px;
@@ -21,12 +23,14 @@
         flex-direction: column;
         width: 70px;
         height: 250px;
-        
+        h3{
+            font-size: 0.5rem;
+        }
         
        
         &__img{
-            height: 180px;
-            width: 90px;
+            height: 160px;
+            width: 60px;
             margin-top: 1rem;
         }
     }

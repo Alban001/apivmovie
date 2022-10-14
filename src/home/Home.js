@@ -3,8 +3,10 @@ import MovieCard from '../moviecard/MovieCard'
 import './home.css'
 import Indexado from '../indexado/Indexado'
 import PopuCard from '../popucard/PopuCard'
-
-
+import movies from '../imagenes/movies.jpg'
+import Estreno from '../estrenos/Estreno'
+import Populares from '../populares/Populares'
+import { Link, Route, Routes } from 'react-router-dom'
 
 const Home = () => {
  
@@ -15,13 +17,13 @@ const Home = () => {
         
         useEffect(()=>{
             masPopulares()
-            cargarLoultimo()
+            cargarEstrenos()
             
         },[pagina])
 
 // Creamos la funcion de carga de peliculas estrenos  , consumiendo la api 
        
-const cargarLoultimo = async () =>{
+const cargarEstrenos = async () =>{
   try {
       const upcoming = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=702035e4cbc1821c72f6af59af045b04&language=en-US&page=${pagina}`)
    
@@ -39,7 +41,7 @@ const cargarLoultimo = async () =>{
 
 const masPopulares = async () =>{
   try {
-      const popular1 = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=702035e4cbc1821c72f6af59af045b04&language=en-US')
+      const popular1 = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=702035e4cbc1821c72f6af59af045b04&language=en-US&page=${pagina}`)
    
       const popu = await popular1.json()
  
@@ -49,10 +51,21 @@ const masPopulares = async () =>{
       console.log('Obtuvimos un error ', e);
     }
 }
-console.log('home zone is ' +typeof(pagina))
+
   return (
     <Fragment>
-    <div className='home'>
+       <div className='header'>
+        <img className='header__image' src={movies} width='1335' height='100' alt='Foto de cine' />
+        <nav>
+                <Link className='header__link' to='/'>Home</Link>
+                <Link className='header__link' to='/populares'>Mas populares</Link> 
+                <Link className='header__link' >Recomendados</Link>
+              
+        </nav>
+      
+    </div>
+     <div className='home'>
+    
        <aside  className='home__left'>
           <header><h1>+ Populares</h1></header>
         {popular.map((item, index) => {
@@ -62,18 +75,13 @@ console.log('home zone is ' +typeof(pagina))
         return null;
       })}
        </aside>
-       <section className='home__right'>
-       <h1> ESTRENOS</h1>
-        <div className='home__container'>
-        {
-            movie.map((item)=>(
-               <MovieCard key={item.id} poster_path={item.poster_path} title={item.title}/>
-            ))
-        }
-        </div>
-        
-      </section>
-        
+
+          {/* Abajo renderizo populares o estrenos*/}
+          <Routes>
+              <Route path='/' element={<Estreno movie={movie} />}/>
+              <Route path='/populares' element={<Populares popular={popular}/>} />
+          </Routes>
+         
     </div>
     <Indexado setPagina={setPagina} pagina={pagina}  />
  

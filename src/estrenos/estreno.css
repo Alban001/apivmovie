@@ -1,0 +1,26 @@
+.estreno {
+  margin: 0px;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+.estreno h1 {
+  text-align: center;
+  margin-right: 7rem;
+  padding-bottom: 2rem;
+  font-size: 1.9rem;
+}
+.estreno__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1px;
+  margin: 1px;
+}
+.estreno__container img {
+  border-radius: 0.3rem;
+}
+.estreno__container img:hover {
+  box-shadow: 0 0 3px rgb(255, 255, 255), 0 0 6px rgb(255, 255, 255), 0 0 8px rgb(255, 255, 255);
+}/*# sourceMappingURL=estreno.css.map */

@@ -6,6 +6,9 @@
   width: 13rem;
   height: auto;
 }
+.popucard h3 {
+  font-size: 1.2rem;
+}
 .popucard__img {
   height: 350px;
   width: 240px;
@@ -20,9 +23,12 @@
     width: 70px;
     height: 250px;
   }
+  .popucard h3 {
+    font-size: 0.5rem;
+  }
   .popucard__img {
-    height: 180px;
-    width: 90px;
+    height: 160px;
+    width: 60px;
     margin-top: 1rem;
   }
 }/*# sourceMappingURL=popucard.css.map */
