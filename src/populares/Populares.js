@@ -8,8 +8,6 @@ const Populares = ({popular}) => {
      <div className='populares__container'>
             {popular.map((item)=>(
                <PopuCard key={item.id} poster_path={item.poster_path} title={item.title}/>
-              
-                
             )) }
        
      </div>
