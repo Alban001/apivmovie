@@ -33,12 +33,13 @@
     justify-content: baseline;
     flex-direction: column;
     margin-top: 3rem;
+    margin-left: 2rem;
   }
   .populares h1 {
     text-align: center;
     margin-right: 1rem;
     padding-bottom: 2rem;
-    font-size: 0.7rem;
+    font-size: 1.9rem;
     text-align: center;
   }
   .populares__container {
