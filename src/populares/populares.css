@@ -30,10 +30,10 @@
   .populares {
     margin: 0px;
     display: flex;
-    justify-content: baseline;
     flex-direction: column;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    width: 100%;
   }
   .populares h1 {
     text-align: center;
@@ -47,6 +47,7 @@
     grid-template-columns: 1fr 1fr;
     padding: 1px;
     margin: 1px;
+    width: 70%;
   }
   .populares__container img {
     border-radius: 0.3rem;

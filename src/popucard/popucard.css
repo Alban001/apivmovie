@@ -7,10 +7,10 @@
   height: auto;
 }
 .popucard h3 {
-  font-size: 1.2rem;
+  color: #ff531a;
 }
 .popucard__img {
-  height: 350px;
+  height: 300px;
   width: 240px;
 }
 
@@ -18,18 +18,21 @@
   .popucard {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     width: 70px;
-    height: 250px;
+    height: 190px;
+    margin-right: 5%;
+    padding: 0%;
   }
   .popucard h3 {
+    color: #ff531a;
     font-size: 0.5rem;
   }
   .popucard__img {
-    height: 160px;
-    width: 80px;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
+    height: 300px;
+    width: 100px;
+    margin: 0%;
+    padding: 0%;
   }
 }/*# sourceMappingURL=popucard.css.map */

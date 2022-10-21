@@ -28,12 +28,12 @@ img:hover{
 }
 @media only screen and (max-width: 394px){
   .populares{
-    margin: 0px;
+   margin: 0px;
    display: flex;
-   justify-content:baseline;
    flex-direction: column;
-   margin-top: 3rem;
-   margin-left: 2rem;
+   margin-top: 5rem;
+   margin-left: 3rem;
+   width: 100%;
    h1{
      text-align: center;
      margin-right:1rem;
@@ -46,8 +46,11 @@ img:hover{
     grid-template-columns: 1fr 1fr;
     padding: 1px;
     margin: 1px;
+    width: 70%;
+   
 img{
     border-radius: 0.3rem;
+    
 }
 img:hover{
  box-shadow: 0 0 3px rgb(255, 255, 255),0 0 6px rgb(255, 255, 255),

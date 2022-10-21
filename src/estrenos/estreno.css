@@ -5,6 +5,7 @@
   flex-direction: column;
   margin-top: 5rem;
   margin-left: 2rem;
+  width: 100%;
 }
 .estreno h1 {
   text-align: center;
