@@ -1,5 +1,4 @@
 import React, {Fragment, useEffect, useState} from 'react'
-import MovieCard from '../moviecard/MovieCard'
 import './home.css'
 import Indexado from '../indexado/Indexado'
 import PopuCard from '../popucard/PopuCard'
@@ -7,9 +6,10 @@ import movies from '../imagenes/movies.jpg'
 import Estreno from '../estrenos/Estreno'
 import Populares from '../populares/Populares'
 import { Link, Route, Routes } from 'react-router-dom'
+import MovieCardDetail from '../MovieCardDetail/MovieCardDetail'
 
 const Home = () => {
- 
+
   const [pagina, setPagina] = useState(1)
   const [movie, setMovie] = useState([]) 
   const [popular, setPopular] = useState([]) 
@@ -25,11 +25,12 @@ const Home = () => {
        
 const cargarEstrenos = async () =>{
   try {
-      const upcoming = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=702035e4cbc1821c72f6af59af045b04&language=en-US&page=${pagina}`)
+      const upcoming = await fetch(`https://api.themoviedb.org/3/movie/upcoming?api_key=702035e4cbc1821c72f6af59af045b04&language=es-ES&page=${pagina}`)
    
       const latestmovies = await upcoming.json()
  
       setMovie(latestmovies.results)
+     
 
     }
     catch (e) {
@@ -41,11 +42,11 @@ const cargarEstrenos = async () =>{
 
 const masPopulares = async () =>{
   try {
-      const popular1 = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=702035e4cbc1821c72f6af59af045b04&language=en-US&page=${pagina}`)
+      const popular1 = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=702035e4cbc1821c72f6af59af045b04&language=es-ES&page=${pagina}`)
    
-      const popu = await popular1.json()
+      const popu = await popular1.json() // devuelve todo el objeto y lo almacena en popu
  
-      setPopular(popu.results)
+      setPopular(popu.results) // lo almaceno en popular por medio del setPopular
     }
     catch (e) {
       console.log('Obtuvimos un error ', e);
@@ -70,7 +71,7 @@ const masPopulares = async () =>{
           <header><h1>+ Populares</h1></header>
         {popular.map((item, index) => {
         if (index < 9) {
-          return <PopuCard key={item.id} poster_path={item.poster_path}/>
+          return <PopuCard key={item.id} poster_path={item.poster_path} />
         }
         return null;
       })}
@@ -79,7 +80,8 @@ const masPopulares = async () =>{
           {/* Abajo renderizo populares o estrenos*/}
           <Routes>
               <Route path='/' element={<Estreno movie={movie} />}/>
-              <Route path='/populares' element={<Populares popular={popular}/>} />
+              <Route path='/populares' element={<Populares popular={popular} />}/>
+              <Route path='popucard/:id' element={<MovieCardDetail popular={popular} />}/>
           </Routes>
          
     </div>

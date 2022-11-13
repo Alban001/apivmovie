@@ -77,6 +77,7 @@
     font-size: 1rem;
     margin: 0.5rem;
     display: inline;
+    cursor: pointer;
   }
   .indexado__paginacion p:hover {
     background-color: white;

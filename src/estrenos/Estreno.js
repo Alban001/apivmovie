@@ -7,10 +7,14 @@ const Estreno = ({movie}) => {
        <h1>Estrenos</h1>
         <div className='estreno__container'>
                {movie.map((item)=>(
-                  <MovieCard key={item.id} poster_path={item.poster_path} title={item.title}/>
+                
+                      <MovieCard key={item.id} poster_path={item.poster_path} title={item.title}/>
+                
+                  
                )) }
-          
+       
         </div>
+      
       </section>
   )
 }

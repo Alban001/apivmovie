@@ -1,0 +1,23 @@
+.moviecardetail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+.moviecardetail img {
+  width: 50%;
+  height: auto;
+}
+.moviecardetail__content {
+  display: flex;
+  flex-direction: column;
+}
+.moviecardetail__content h1 {
+  padding-left: 2rem;
+}
+.moviecardetail__content h3 {
+  width: 70%;
+  margin: 1 rem;
+  padding: 2rem;
+  color: white;
+}/*# sourceMappingURL=moviecardetail.css.map */
